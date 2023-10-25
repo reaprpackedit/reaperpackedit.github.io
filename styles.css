@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    animation: animateBackground 10s ease infinite;
     background: linear-gradient(to bottom, black, orange);
 }
 
@@ -16,11 +15,3 @@ body {
     color: transparent;
 }
 
-@keyframes animateBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
