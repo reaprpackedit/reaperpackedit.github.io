@@ -1,28 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    color: white;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, purple, pink);
-    font-size: 2em;
-    animation: animateGradient 3s linear infinite;
+    animation: animateBackground 10s ease infinite;
 }
 
 .header {
     padding: 20px;
     text-align: center;
+    color: white;
+    font-size: 2em;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-.animated-text {
-    color: rgb(20, 20, 20);
-}
-
-@keyframes animateGradient {
+@keyframes animateBackground {
     0% {
-        background-position: 100% 50%;
+        background-position: 0% 50%;
     }
     100% {
-        background-position: 0 50%;
+        background-position: 100% 50%;
     }
 }
